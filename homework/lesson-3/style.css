@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    gap: 30px;
+}
+p {
+    width: 90%;
+    font-size: 20px;
+}
+h1 {
+    font-size: 50px;
+}
+#top {
+    background-color: indianred;
+}
+#middle {
+    background-color: #45c6c6;
+}
+#bottom {
+    background-color: #4baa50;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+}

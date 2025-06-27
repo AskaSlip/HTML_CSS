@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d3d1d1;
+    font-family: "Comic Sans MS ", cursive, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    border: 2px solid gray;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.card img{
+    width: 60%;
+}
