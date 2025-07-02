@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Pacman Orbit</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #a1bedf;
+        }
+
+        .line {
+            position: relative;
+            width: 400px;
+            height: 50px;
+        }
+
+        .dot {
+            top: 40%;
+            left: 20%;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            animation: move 4s linear infinite;
+
+        }
+
+        .pacman {
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            transform: translateY(-50%);
+            animation: move 4s linear infinite;
+        }
+
+        .pacman img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .pacman .open {
+            animation: showOpen 0.3s steps(1) infinite;
+        }
+
+        .pacman .closed {
+            animation: showClosed 0.3s steps(1) infinite;
+        }
+
+        @keyframes move {
+            0% { transform: translate(0, -50%); }
+            100% { transform: translate(360px, -50%) scale(1.5); }
+        }
+
+        @keyframes showOpen {
+            0% {opacity: 1;}
+            50% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @keyframes showClosed {
+            0% {opacity: 0;}
+            50% {opacity: 1;}
+            100% {opacity: 0;}
+        }
+
+    </style>
+</head>
+<body>
+<div class="line">
+        <div class="dot"></div>
+    <div class="pacman">
+        <img src="img/pacman-open.png" alt="open" class="open">
+        <img src="img/pacman-close.png" alt="closed" class="closed">
+    </div>
+</div>
+</body>
+</html>

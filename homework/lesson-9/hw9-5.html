@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 60vw 40vw;
+            grid-template-rows: 4vh 40vh 34vh 10vh 1fr;
+            grid-template-areas:
+                "header header"
+                "main top-article"
+                "main bottom-article"
+                "section section"
+                "footer footer";
+        }
+        header {
+            grid-area: header;
+            background: #D9D9D9;
+        }
+        main {
+            grid-area: main;
+            background: #A4A4A4;
+        }
+        .top-article {
+            grid-area: top-article;
+            background: #7F7A7A;
+        }
+        .bottom-article {
+            grid-area: bottom-article;
+            background: #615050;
+        }
+        section {
+            grid-area: section;
+            background: #D9D9D9;
+        }
+        footer {
+            grid-area: footer;
+            background: #AFA9A9;
+        }
+    </style>
+</head>
+<body>
+<div class="grid">
+    <header></header>
+    <main></main>
+    <article class="top-article"></article>
+    <article class="bottom-article"></article>
+    <section></section>
+    <footer></footer>
+</div>
+</body>
+</html>

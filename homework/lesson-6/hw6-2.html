@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form-1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #398889;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        div.auth-form {
+            width: 500px;
+            height: 350px;
+            background-color: #fdfdfd;
+            border-radius: 10px;
+        }
+
+        div.auth-form > div {
+            width: 100%;
+            height: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e9f1f1;
+            border-radius: 10px 10px 0 0;
+        }
+
+        div.auth-form > div > h3 {
+            font-weight: 400;
+            font-size: 28px;
+        }
+        div.auth-form form {
+            width: 100%;
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 25px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 80%;
+            height: 35px;
+            border-radius: 0;
+            border: 1.5px solid #ababab;
+        }
+        div.auth-form > form > input:nth-child(1){
+            margin-top: 15px;
+        }
+        div.auth-form > form > div {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        div.auth-form > form > div > button {
+            width: 90px;
+            height: 27px;
+            background-color: #e9f1f1;
+            border-radius: 10px;
+            font-size: 12px;
+            border: 1.5px solid #ababab;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="auth-form">
+    <div>
+        <h3>Вхід в особистий кабінет</h3>
+    </div>
+    <form>
+        <input type="text" placeholder="Логін або email" name="login" required>
+        <input type="password" placeholder="Пароль" name="password" required>
+        <div>
+            <label for="remember">
+            Запам'ятати мене
+            <input type="checkbox" name="remember" id="remember">
+        </label>
+            <button type="submit">Вхід</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

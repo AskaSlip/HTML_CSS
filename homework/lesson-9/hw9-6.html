@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>hw6</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 29vw 31vw 1fr;
+            grid-template-rows: 4vh 1fr 1fr 10vh;
+            grid-template-areas:
+                "header header header"
+                "section-left section-right article-top"
+                "section-left section-right article-bottom"
+                "footer footer footer";
+        }
+        header {
+            grid-area: header;
+            background: #D9D9D9;
+        }
+        .section-left {
+            grid-area: section-left;
+            background: #A4A4A4;
+        }
+        .section-right {
+            grid-area: section-right;
+            background: #C1C1C1;
+        }
+        .article-top {
+            grid-area: article-top;
+            background: #7F7A7A;
+        }
+        .article-bottom {
+            grid-area: article-bottom;
+            background: #6B6161;
+        }
+        footer {
+            grid-area: footer;
+            background: #D9D9D9;
+        }
+    </style>
+</head>
+<body>
+<div class="grid">
+<header></header>
+    <section class="section-left"></section>
+    <section class="section-right"></section>
+    <article class="article-top"></article>
+    <article class="article-bottom"></article>
+    <footer></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>preloader</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .orbit {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            animation: rotate 5s linear infinite  reverse;
+        }
+
+        .orbit img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80px;
+            transform: translate(120px, -50%) rotate(-90deg);
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg) skew(25deg)}
+            25% { transform: rotate(90deg) skew(5deg)}
+            50% { transform: rotate(180deg) skew(-15deg)}
+            75% { transform: rotate(270deg) skew(5deg)}
+            to   { transform: rotate(360deg) skew(25deg)}
+        }
+
+    </style>
+</head>
+<body>
+<div class="orbit">
+    <img src="img/plane.png" alt="plane">
+</div>
+</body>
+</html>

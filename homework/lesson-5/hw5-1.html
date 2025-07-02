@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>preloader</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f3ecec;
+        }
+
+        .preloader {
+            width: 250px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .wrapper-rainbow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cat {
+            width: 80px;
+            position: absolute;
+            right: 15px;
+            animation: kitty 1s ease-in-out infinite alternate;
+        }
+        .rainbow {
+            width: 30px;
+        }
+        .part {
+            margin-bottom: 10px;
+        }
+        .double-part {
+            animation: rainbow 1s ease-in-out infinite alternate;
+        }
+        @keyframes kitty {
+            from {
+                transform: translateY(0px);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes rainbow {
+            from {
+                transform: translateY(0px);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="preloader">
+    <div class="wrapper-rainbow">
+        <img class="rainbow double-part" src="img/rainbow-part.png" alt="rainbow">
+        <img class="rainbow part" src="img/rainbow-part.png" alt="rainbow">
+        <img class="rainbow double-part" src="img/rainbow-part.png" alt="rainbow">
+    </div>
+    <img class="cat" src="img/cat.png"
+         alt="cat">
+</div>
+</body>
+</html>
